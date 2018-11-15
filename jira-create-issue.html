@@ -5,22 +5,26 @@
 </head>
 <body>
 <div id="wrapper">
-	<h1>Create Issue</h1>
+	<h1>Create Employee Access Tickets</h1>
 	<form id="create-form">
-		Summary: <input type="text" name="summary" id="summary" value=""/>
-		Description: <input type="text" name="description" id="description" value="" />
-		Issue Type: <input type="text" name="type" id="type" value=""/>
-		Username: <input type="text" name="user" id="user" value=""/>
-		Password: <input type="password" name="pass" id="pass" value=""/>
-		<input type="button" id="button" value="Create Issue"/>
+		<p>Employee Name: <input type="text" name="Employee Name" id="employeeName" value=""/></p>
+		<p>Company: <input type="text" name="company" id="company" value="" /></p>
+		<p>Start Date: <input type="date" name="startDate" id="startDate" value="" /></p>
+		<p><input type="checkbox" name="activeDirectory" value=""> A/D(DAI)<br>
+		<input type="checkbox" name="email" value=""> Email<br>
+		<input type="checkbox" name="jiraCloud" value=""> Jira Cloud<br>
+		<input type="checkbox" name="jiraLocal" value=""> Jira Local<br>
+		<input type="checkbox" name="slack" value=""> Slack<br>
+		<input type="checkbox" name="phone3cx" value=""> 3cx<br>
+		<input type="checkbox" name="vpn" value=""> VPN<br></p>
+		<input type="button" id="button" value="Create Tickets"/>
 	</form>
 </div>
 <script>
-
 $('#button').click(function() {
 	 $.ajax({
 	   type: "POST",
-	   url: "test.php",
+	   url: "jira-create-issue.php",
 	   data: $('#create-form').serialize(),
 	   success: function(data){
 		  alert(data);
