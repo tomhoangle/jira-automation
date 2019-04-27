@@ -1,2 +1,2 @@
 # Employee Onboarding Jira Automation
-This is program to automate creating tickets for new employee.
+Automate onboard process for new employee using Jira Ticketing system and create mutiple account access for them based on their data in postgresql.
