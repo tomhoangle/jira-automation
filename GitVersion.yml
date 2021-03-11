@@ -1,0 +1,10 @@
+assembly-versioning-scheme:MajorMinorPatch
+mode: Mainline
+branches:
+	develop:
+		increment: Patch
+		is-mainline: true
+		tag: ''
+ignore:
+	sha: []
+merge-message-formats: {}
