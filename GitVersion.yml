@@ -1,9 +1,9 @@
 assembly-versioning-scheme: MajorMinorPatch
 branches:
-	develop:
-		increment: Patch
-		is-mainline: true
-		tag: ''
+develop:
+increment: Patch
+is-mainline: true
+tag: ''
 ignore:
-	sha: []
+sha: []
 merge-message-formats: {}
