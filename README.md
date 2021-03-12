@@ -1,2 +1,2 @@
 # gitversioning
-dedd
+12.0.0
