@@ -4,7 +4,7 @@ branches:
   develop:
     increment: Patch
     is-mainline: true
-    tag: useBranchName
+    tag: ''
 ignore:
   sha: []
 merge-message-formats: {}
