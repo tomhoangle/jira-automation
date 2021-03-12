@@ -1,2 +1,2 @@
 # gitversioning
-de
+ded
