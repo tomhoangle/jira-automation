@@ -6,7 +6,7 @@ branches:
     is-mainline: true
     tag: ''
   develop-Run:
-    regex: develop-Strike
+    regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
     tag: ''
