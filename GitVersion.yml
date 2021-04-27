@@ -5,6 +5,11 @@ branches:
     increment: Patch
     is-mainline: true
     tag: ''
+  develop-strike:
+    regex: develop-Strike
+    mode: ContinuousDeployment
+    increment: Patch
+    tag: ''
 ignore:
   sha: []
 merge-message-formats: {}
