@@ -8,9 +8,9 @@ branches:
   develop-Run:
     regex: develop-Run
     mode: ContinuousDeployment
+    continuous-delivery-fallback-tag: ""
     increment: Patch
     source-branches: ['develop']
-    continuous-delivery-fallback-tag: ''
     tag: ''
 ignore:
   sha: []
