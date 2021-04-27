@@ -1,2 +1,2 @@
 # gitversioning
-26.1.01
+26.1
