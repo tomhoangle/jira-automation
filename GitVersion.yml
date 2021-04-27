@@ -11,7 +11,7 @@ branches:
     regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
-    source-branches: ['develop']
+    source-branches: []
     prevent-increment-of-merged-branch-version: false
     track-merge-target: true
     tracks-release-branches: true
