@@ -11,6 +11,7 @@ branches:
     mode: ContinuousDeployment
     increment: Patch
     source-branches: ['develop']
+    tag-prefix: 'run-'
     tag: ''
 ignore:
   sha: []
