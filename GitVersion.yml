@@ -1,6 +1,7 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: Mainline
 continuous-delivery-fallback-tag: ""
+tag-prefix: '^(run|walk)'
 branches:
   develop:
     increment: Patch
@@ -11,7 +12,6 @@ branches:
     mode: ContinuousDeployment
     increment: Patch
     source-branches: ['develop']
-    tag-prefix: 'run-'
     tag: ''
 ignore:
   sha: []
