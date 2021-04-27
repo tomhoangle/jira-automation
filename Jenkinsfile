@@ -5,7 +5,7 @@ pipeline {
     environment {
         VERSION_NUMBER = ""
         DOCKER_TAG = ""
-        TOM_USER = credentials('TomGit')
+        TOM_USER = credentials('gittom')
     }
     stages {
         stage('git tag') {
@@ -18,7 +18,7 @@ pipeline {
                    DOCKER_TAG = "run-" + VERSION_NUMBER
                    echo DOCKER_TAG
                    sh "git tag $DOCKER_TAG"
-                   sh 'git push https://$TOM_USER@github.com/tomhoangle/gitversioning.git --tags'
+                   sh 'git push https://tomhoangle1:$TOM_USER@github.com/tomhoangle/gitversioning.git --tags'
                 }
             }
         }
