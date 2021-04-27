@@ -1,5 +1,6 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: Mainline
+continuous-delivery-fallback-tag: ""
 branches:
   develop:
     increment: Patch
@@ -8,7 +9,6 @@ branches:
   develop-Run:
     regex: develop-Run
     mode: ContinuousDeployment
-    continuous-delivery-fallback-tag: ""
     increment: Patch
     source-branches: ['develop']
     tag: ''
