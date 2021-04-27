@@ -5,7 +5,7 @@ branches:
     increment: Patch
     is-mainline: true
     tag: ''
-  develop-strike:
+  develop-Strike:
     regex: develop-Strike
     mode: ContinuousDeployment
     increment: Patch
