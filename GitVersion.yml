@@ -9,6 +9,7 @@ branches:
     regex: develop-Run
     mode: ContinuousDeployment
     increment: Patch
+    source-branches: ['develop']
     tag: ''
 ignore:
   sha: []
