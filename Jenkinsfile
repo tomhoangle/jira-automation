@@ -7,13 +7,14 @@ pipeline {
         DOCKER_TAG = ""
         TOM_USER = credentials('gittom')
         REPO_ADDRESS = ""
+        
     }
     stages {
         stage('git tag') {
             steps {
                 echo repoUrl
                 script {
-                    def repoUrl = checkout(scm).GIT_URL
+                    REPO_ADDRESS = checkout(scm).GIT_URL
                     VERSION_NUMBER = sh (
                         script: 'docker run --rm -v "$WORKSPACE:/repo" gittools/gitversion:5.3.5-linux-alpine.3.10-x64-netcoreapp3.1 /repo /showvariable MajorMinorPatch',
                         returnStdout: true
