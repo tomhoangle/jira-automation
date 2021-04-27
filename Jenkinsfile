@@ -5,6 +5,7 @@ pipeline {
     environment {
         VERSION_NUMBER = ""
         DOCKER_TAG = ""
+        TOM_USER = credentials('TomGit')
     }
     stages {
         stage('git tag') {
