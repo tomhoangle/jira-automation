@@ -12,7 +12,6 @@ pipeline {
     stages {
         stage('git tag') {
             steps {
-                echo repoUrl
                 script {
                     REPO_ADDRESS = checkout(scm).GIT_URL
                     VERSION_NUMBER = sh (
