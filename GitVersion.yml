@@ -1,5 +1,5 @@
 assembly-versioning-scheme: MajorMinorPatch
-mode: Mainline
+mode: ContinuousDeployment
 continuous-delivery-fallback-tag: ""
 tag-prefix: '^(run-|walk-)'
 branches:
